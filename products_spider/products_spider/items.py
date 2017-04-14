@@ -8,7 +8,12 @@
 import scrapy
 
 
-class IkeaItem(scrapy.Item):
+class ProductsSpiderItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    prod_id = scrapy.Field()
+    title = scrapy.Field()
+    description = scrapy.Field()
+    price = scrapy.Field()
+    files = scrapy.Field()
+    file_urls = scrapy.Field()
